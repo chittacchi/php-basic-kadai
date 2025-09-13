@@ -21,7 +21,7 @@
             }
               //メソッドを定義する
             public function show_price() {
-                return $this->price;    
+                echo $this->price;    
             }
         }
         //クラスを定義する
@@ -39,27 +39,28 @@
             }
              //メソッドを定義する
             public function show_height() {
-                return $this->height;
+                echo $this->height;
             }
         }
         //インスタンス化する
-        $food = new Food('potato', 250);
-        $animal = new Animal('dog', 60, 5000);
+        $potato = new Food('potato', 250);
+        $dog = new Animal('dog', 60, 5000);
 
         //インスタンス$F00dの各プロパティの値を出力する
-        print_r($food);
-        echo "<br>";
+        print_r($potato);
+        echo '<br>';
         //インスタンス$Animalの各プロパティの値を出力する
-        print_r($animal);
-        echo "<br>";
+        print_r($dog);
+        echo '<br>';
 
         //メソッドにアクセスしてpriceプロパティの値を出力する
-        echo $food->show_price();
-        echo "<br>";
+        $potato->show_price();
+        echo '<br>';
         //メソッドにアクセスしてheightプロパティの値を出力する
-        echo $animal->show_height();
-
+        $dog->show_height();
         ?>
-    </p>   
+    </p>
+</body>
+</html>   
         
 
